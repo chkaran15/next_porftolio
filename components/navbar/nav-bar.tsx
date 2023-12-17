@@ -26,20 +26,27 @@ export default function Navbar({ open, setOpen }: Type) {
                 onClick={() => setOpen(true)}
               />
 
-              <Image
+              {/* <Image
                 src={"/logo/logo.png"}
                 width={167}
                 height={34}
                 className="logo hidden lg:block"
                 alt="logo"
-              />
+              /> */}
+              <Link href="/" className="logo-wrapper text-[20px]  ">
+                <h1 className="font-bold">Karan</h1>{" "}
+                <h1 className="text-voilet font-bold pl-4 -mt-2">Chaudhary</h1>
+              </Link>
 
               {/* <SearchBar /> */}
 
               <div className="hidden xl:flex gap-6 items-center  text-base font-medium  text-[#101828]">
-                <Link href="#">Program</Link>
-                <Link href="#">Enterprise</Link>
-                <Link href="#">Universities</Link>
+                <Link href="#">Home</Link>
+                <Link href="#">About</Link>
+                <Link href="#">Skills</Link>
+                <Link href="#">Projects</Link>
+                <Link href="#">Contact</Link>
+                <Link href="#">Blog</Link>
               </div>
             </div>
 

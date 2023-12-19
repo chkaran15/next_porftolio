@@ -6,18 +6,22 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 
 function Header() {
   return (
-    <section className="programs-container w-full px-4 md:px-[20px] lg:px-[120px] py-10  overflow-hidden gap-5">
+    <section id="home" className="programs-container w-full px-4 md:px-[20px] lg:px-[120px] py-10  overflow-hidden gap-5">
       <div className="header-wrapper flex flex-col xl:flex-row  ">
         <div className="w-full flex flex-col">
           <div className="flex flex-col gap-5 header-title">
             <h1 className="text-4xl md:text-6xl font-bold -trackling-[0.5px] capitalize">
-              Up Your <span className="text-color text-voilet">Skills</span> To{" "}
-              <span className="text-color text-voilet">Advance</span> Your{" "}
-              <span className="text-color text-voilet">Career</span>Path
+              Crafting creative{" "}
+              <span className="text-color text-voilet">web designs</span> for{" "}
+              <span className="text-color text-voilet">an immersive </span> user{" "}
+              <span className="text-color text-voilet">experience </span>
+              journey.
             </h1>
             <p>
-              Provides you with the latest online learning system and material
-              that help your knowledge growing.
+              I am{" "}
+              <span className="text-color text-voilet">Karan Chaudhary</span>. A
+              dedicated frontend developer adept at crafting user-centric
+              designs to create seamless and engaging digital experiences.
             </p>
             <div className="header-buttons flex gap-3 md:gap-7 mt-3">
               <button className="px-3 md:px-7 py-4 text-[18px] font-semibold text-white bg-voilet rounded-lg border-1 border-[#F4EBFF] shadow-[0_1_2_0_rgba(16,24,40,0.05)]">

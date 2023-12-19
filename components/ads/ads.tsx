@@ -67,7 +67,7 @@ function Ads() {
             src={item?.image}
             width={200}
             height={30}
-            
+            className="object-content"
             alt={item?.image || ""}
             key={i}
           />

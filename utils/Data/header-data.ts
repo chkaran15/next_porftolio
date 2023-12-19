@@ -1,17 +1,17 @@
 export default [
     {
-        total_number:"2K+",
-        title:"Video Courses",
+        total_number:"50+",
+        title:"Projets Done",
         image:"/header/videos.png"
     },
     {
-        total_number:"5K+",
+        total_number:"10+",
         title:"Online Courses",
         image:"/header/Ring.png"
     },
     {
-        total_number:"2K+",
-        title:"Tutors Courses",
+        total_number:"10+",
+        title:"Language Learned",
         image:"/header/tutor.png"
     }
 ]

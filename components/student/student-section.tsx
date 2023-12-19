@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Student() {
   return (
-    <section id="about" className="student-container w-full px-4 md:px-[120px] flex flex-col overflow-hidden gap-5  ">
+    <section
+      id="about"
+      className="student-container w-full px-4 md:px-[120px] flex flex-col overflow-hidden gap-5  "
+    >
       <div className="w-full py-[96px]  flex flex-col px-8 gap-8">
         <h1 className="course-title text-2xl md:text-5xl -tracking-[0.96px] font-medium text-center">
           Learn more about me here.
@@ -22,7 +25,7 @@ export default function Student() {
             Karan Chaudhary
           </h1>
           <div className="flex justify-center w-full items-center">
-            <p className="w-[50%] font-normal text-center text-gray-text ">
+            <p className="w-full lg:w-[50%] font-normal text-center text-gray-text ">
               Hi, I am Karan Chaudhary, a highly motivated final year student
               eager to learn new technologies and execute projects as per
               requirements. I possess excellent communication and leadership

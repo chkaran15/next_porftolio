@@ -1,3 +1,4 @@
+"use client";
 import { menuState } from "@/atoms/menu-atom/menu-state";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
@@ -5,7 +6,7 @@ import { useRecoilState } from "recoil";
 
 function VerticalCurve() {
   const [isActive, setIsActive] = useRecoilState(menuState);
-  
+
   const pathRef = useRef<SVGPathElement>(null);
   const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight);
 

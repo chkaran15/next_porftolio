@@ -1,3 +1,4 @@
+"use client"
 import { menuState } from "@/atoms/menu-atom/menu-state";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";

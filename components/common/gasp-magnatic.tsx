@@ -34,6 +34,7 @@ export const GsapMagnatic = ({ children }: { children: React.ReactNode }) => {
 
     return () => {
       ref.current?.addEventListener("mousemove", mouseMove);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       ref.current?.addEventListener("mouseleave", mouseLeave);
     };
   }, []);

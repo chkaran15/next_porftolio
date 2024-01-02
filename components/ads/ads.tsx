@@ -25,6 +25,7 @@ function Ads() {
     }
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   function increaseCount() {
     if (count < 250) {
       setCount(count + 1);
@@ -50,7 +51,7 @@ function Ads() {
 
     // Clean up the timeout when the component unmounts
     return () => clearTimeout(countInterval);
-  }, [count]); // Run the effect whenever the 'count' state changes
+  }, [count, increaseCount]); // Run the effect whenever the 'count' state changes
 
   return (
     <section className="ads-container w-full px-4 md:px-[20px] lg:px-[120px] py-5 flex flex-col md:flex-row overflow-hidden gap-[55px]  ">

@@ -1,9 +1,8 @@
 "use client";
-
 import React, { useState } from "react";
-import Navbar from "../navbar/nav-bar";
-import { TopHeader } from "../common/top-header";
+
 import { RecoilRoot } from "recoil";
+import { TopHeader } from "../common/top-header";
 
 function Provider({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);

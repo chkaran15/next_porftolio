@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { menuState } from "@/atoms/menu-atom/menu-state";
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
@@ -7,7 +7,10 @@ import { useRecoilState } from "recoil";
 function HorizontalCurve() {
   const [isActive, setIsActive] = useRecoilState(menuState);
   const pathRef = useRef<SVGPathElement>(null);
-  const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight);
+
+  const [windowHeight, setWindowHeight] = useState<number>(
+    typeof window !== "undefined" ? window.innerHeight : 0
+  );
 
   const initialPath = `M100 0 L100 ${windowHeight} Q100 ${
     windowHeight / 2

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import InfoCard from "./info-card";
-import data from "../../utils/Data/header-data";
-import { FaLaptopCode } from "react-icons/fa";
+import data from "@/utils/Data/header-data";
 
 function ImageSection() {
   return (

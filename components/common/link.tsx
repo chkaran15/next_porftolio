@@ -1,3 +1,4 @@
+"use client";
 import { menuState } from "@/atoms/menu-atom/menu-state";
 import Link from "next/link";
 import React from "react";

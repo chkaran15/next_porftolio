@@ -1,5 +1,6 @@
 import ServiceCard from "./service-card"
-import data from "../../utils/Data/service-data"
+import data from "@/utils/Data/service-data"
+
 export default function Services(){
     return (
         <section id="services" className="services-container w-full px-4 md:px-[20px] lg:px-[120px] py-[20px] flex flex-col overflow-hidden gap-[20px] ">

@@ -2,9 +2,10 @@
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
-import VerticalCurve from "../curve-line.tsx/vertical-curve";
+
 import { menuState } from "@/atoms/menu-atom/menu-state";
 import { useRecoilState } from "recoil";
+import VerticalCurve from "../curve-line.tsx/vertical-curve";
 
 const TransistionAnimation = ({ title }: { title: any }) => {
   const [isActive, setIsActive] = useRecoilState(menuState);

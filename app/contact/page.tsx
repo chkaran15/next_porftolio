@@ -6,7 +6,7 @@ export default function Contact() {
     <>
       <TransistionAnimation title={"Contact"} />
       <div className="flex h-screen min-h-[100dvh] items-center justify-center">
-        <h1 className="text-3xl">Contact</h1>
+        <h1 className="text-3xl">Contact Page</h1>
       </div>
     </>
   );

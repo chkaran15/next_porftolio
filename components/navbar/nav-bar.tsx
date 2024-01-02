@@ -1,6 +1,3 @@
-"use client";
-import Image from "next/image";
-import SearchBar from "./search-bar";
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 import { GrFormClose } from "react-icons/gr";

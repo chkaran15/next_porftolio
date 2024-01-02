@@ -1,9 +1,12 @@
-import data from "../../utils/Data/tutor-data";
+import data from "@/utils/Data/tutor-data";
 import TutorCard from "./tutor-card";
 
 export default function Tutors() {
   return (
-    <section id="testominals" className="tutor-container w-full px-4 md:px-[20px] lg:px-[120px] py-5 flex flex-col overflow-hidden gap-10 pb-4">
+    <section
+      id="testominals"
+      className="tutor-container w-full px-4 md:px-[20px] lg:px-[120px] py-5 flex flex-col overflow-hidden gap-10 pb-4"
+    >
       <div className="tutor-wraper w-full flex justify-center ">
         <div className="w-[750px] flex flex-col">
           <h3 className="text-center text-base font-semibold text-[#6941C6]">

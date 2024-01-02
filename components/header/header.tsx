@@ -1,8 +1,8 @@
 import React from "react";
-import ImageSection from "./image-card";
 import { RiSpeakFill } from "react-icons/ri";
 import { ImBriefcase } from "react-icons/im";
 import { HiOutlineLightBulb } from "react-icons/hi";
+import ImageSection from "./image-card";
 
 function Header() {
   return (

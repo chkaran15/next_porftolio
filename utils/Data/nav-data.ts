@@ -22,7 +22,7 @@ export const navData = [
   {
     id: 5,
     name: "Services",
-    url: "/services",
+    url: "/service",
   },
   {
     id: 6,

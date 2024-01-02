@@ -8,7 +8,9 @@ function VerticalCurve() {
   const [isActive, setIsActive] = useRecoilState(menuState);
 
   const pathRef = useRef<SVGPathElement>(null);
-  const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight);
+  const [windowHeight, setWindowHeight] = useState<number>(
+    typeof window !== "undefined" ? window.innerHeight : 0
+  );
 
   const initialPath = `M100 0 L100 ${windowHeight} Q100 ${
     windowHeight / 2

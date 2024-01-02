@@ -1,3 +1,4 @@
+import TransistionAnimation from "@/components/service/transistion";
 import Ads from "../components/ads/ads";
 import Blog from "../components/blog/blog-section";
 import Footer from "../components/footer/footer";
@@ -9,15 +10,18 @@ import Tutors from "../components/tutors/tutor-section";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col gap-20">
-      <Header />
-      <Services />
-      <Student />
-      <Ads />
-      <Programs />
-      <Tutors />
-      <Blog />
-      <Footer />
-    </main>
+    <>
+      <TransistionAnimation title={"Home"} />
+      <main className="w-full flex flex-col gap-20">
+        <Header />
+        <Services />
+        <Student />
+        <Ads />
+        <Programs />
+        <Tutors />
+        <Blog />
+        <Footer />
+      </main>
+    </>
   );
 }

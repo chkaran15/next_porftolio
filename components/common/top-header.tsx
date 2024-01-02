@@ -6,11 +6,10 @@ import NavHeader from "./nav-header";
 import BurgerMenu from "./burger-menu";
 
 export const TopHeader = () => {
-  const [isActive, setIsActive] = useState(false);
   return (
     <>
-      <BurgerMenu setIsActive={setIsActive} isActive={isActive} />
-      <NavHeader isActive={isActive} />
+      <BurgerMenu  />
+      <NavHeader />
     </>
   );
 };

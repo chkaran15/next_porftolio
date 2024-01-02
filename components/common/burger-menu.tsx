@@ -1,20 +1,18 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { GsapMagnatic } from "./gasp-magnatic";
+import { useRecoilState } from "recoil";
+import { menuState } from "@/atoms/menu-atom/menu-state";
 
-function BurgerMenu({
-  setIsActive,
-  isActive,
-}: {
-  setIsActive: any;
-  isActive: any;
-}) {
+function BurgerMenu() {
+  const [isActive, setIsActive] = useRecoilState(menuState);
+
   return (
     <>
       <GsapMagnatic>
         <div
           className={twMerge(
-            " header-wrapper z-[99] bg-voilet cursor-pointer fixed  h-20 w-20 rounded-full right-1 top-1 flex flex-col gap-2 justify-center items-center"
+            " header-wrapper z-[1000] bg-voilet cursor-pointer fixed  h-20 w-20 rounded-full right-1 top-1 flex flex-col gap-2 justify-center items-center"
           )}
           onClick={() => {
             setIsActive(!isActive);

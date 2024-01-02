@@ -12,11 +12,21 @@ export const navData = [
   {
     id: 3,
     name: "Work",
-    url: "/",
+    url: "/work",
   },
   {
     id: 4,
     name: "Contact",
     url: "/contact",
+  },
+  {
+    id: 5,
+    name: "Services",
+    url: "/services",
+  },
+  {
+    id: 6,
+    name: "Blog",
+    url: "/blog",
   },
 ];

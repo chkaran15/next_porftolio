@@ -40,17 +40,16 @@ export default function Navbar({ open, setOpen }: Type) {
 
               {/* <SearchBar /> */}
 
-              <div className="hidden xl:flex gap-6 items-center  text-base font-medium  text-[#101828]">
-                <Link href="#">Home</Link>
-                <Link href="#">About</Link>
-                <Link href="#">Skills</Link>
-                <Link href="#">Projects</Link>
-                <Link href="#">Contact</Link>
-                <Link href="#">Blog</Link>
+              <div className="hidden xl:flex gap-6 items-center  text-base font-semibold  text-[#101828]">
+                <Link href="#home">Home</Link>
+                <Link href="#about">About</Link>
+                <Link href="#services">Services</Link>
+                <Link href="#projects">Projects</Link>
+                <Link href="#blogs">Blog</Link>
               </div>
             </div>
 
-            <div className="hidden md:flex items-center gap-4">
+            {/* <div className="hidden md:flex items-center gap-4">
               <Link
                 href="#"
                 className="align-center text-base font-medium text-[#101828] w-20"
@@ -63,19 +62,23 @@ export default function Navbar({ open, setOpen }: Type) {
               >
                 Create free account
               </Link>
-            </div>
+            </div> */}
           </div>
         </nav>
       ) : (
         <div className="navbar-show flex flex-col gap-2 px-4 py-4 overflow-y-scroll  w-[320px] h-screen  bg-white ">
           <div className="relative flex justify-between py-2">
-            <Image
+            {/* <Image
               src={"/sampleLogo.png"}
               width={167}
               height={34}
               className="logo  "
               alt="logo"
-            />
+            /> */}
+            <Link href="/" className="logo-wrapper text-[20px]  ">
+              <h1 className="font-bold">Karan</h1>{" "}
+              <h1 className="text-voilet font-bold pl-4 -mt-2">Chaudhary</h1>
+            </Link>
 
             <GrFormClose
               className="absolute top-2 right-2  text-2xl "
@@ -83,13 +86,15 @@ export default function Navbar({ open, setOpen }: Type) {
             />
           </div>
 
-          <div className="flex flex-col gap-4 mt-5 text-base font-medium  text-[#101828]">
-            <Link href="#">Program</Link>
-            <Link href="#">Enterprise</Link>
-            <Link href="#">Universities</Link>
+          <div className="flex flex-col gap-4 mt-5 text-base font-semibold  text-[#101828]">
+            <Link href="#home">Home</Link>
+            <Link href="#about">About</Link>
+            <Link href="#services">Services</Link>
+            <Link href="#projects">Projects</Link>
+            <Link href="#blogs">Blog</Link>
           </div>
 
-          <div className="flex md:hidden flex-col gap-4">
+          {/* <div className="flex md:hidden flex-col gap-4">
             <Link
               href="#"
               className="align-center text-base font-medium text-[#101828] w-20"
@@ -102,7 +107,7 @@ export default function Navbar({ open, setOpen }: Type) {
             >
               Create free account
             </Link>
-          </div>
+          </div> */}
         </div>
       )}
     </>

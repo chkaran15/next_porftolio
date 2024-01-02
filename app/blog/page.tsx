@@ -6,7 +6,6 @@ export default function Blog() {
   return (
     <main className="blog-page-wrapper h-[100dvh] flex justify-center items-center">
       <div className="magnetic-container flex gap-10">
-        
         <Link
           href={"/"}
           className="relative overflow-hidden bg-blue-500 px-10 py-3 rounded-[40px] text-white"
@@ -16,11 +15,9 @@ export default function Blog() {
           }}
         >
           <GsapMagnatic>
-            <h1 className="text-3xl cursor-pointer relative z-10">Button</h1>
+            <h1 className="text-3xl cursor-pointer relative z-[1]">Button</h1>
           </GsapMagnatic>
         </Link>
-
-
       </div>
     </main>
   );

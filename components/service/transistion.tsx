@@ -22,7 +22,7 @@ const TransistionAnimation = ({ title }: { title: any }) => {
     gsap.to(transistionRef.current, {
       delay: 1.15,
       position: "absolute",
-      top: "-125%",
+      top: "-130%",
       background: "black",
       opacity: 1,
       duration: 1,

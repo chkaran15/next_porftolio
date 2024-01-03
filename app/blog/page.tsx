@@ -18,7 +18,7 @@ export default function Blog() {
             }}
           >
             <GsapMagnatic>
-              <h1 className="text-3xl cursor-pointer relative z-[1]">Blog</h1>
+              <h1 className="text-3xl relative z-[1]">Blog</h1>
             </GsapMagnatic>
           </Link>
         </div>

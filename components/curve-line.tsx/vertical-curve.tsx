@@ -46,8 +46,8 @@ function VerticalCurve() {
   }, [initialPath, isActive, targetPath]);
 
   return (
-    <svg className="horizontal-curve absolute bottom-[-200px] w-full h-[200px] z-[120] bg-transparent ">
-      <path ref={pathRef}  />
+    <svg className="horizontal-curve absolute bottom-[-200px] w-full h-[200px]   ">
+      <path ref={pathRef} fill="black" />
     </svg>
   );
 }

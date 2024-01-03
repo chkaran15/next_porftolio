@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import { RecoilRoot } from "recoil";
 import { TopHeader } from "../common/top-header";
+import Cursor from "../sticky-cursor";
 
 function Provider({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,7 @@ function Provider({ children }: { children: React.ReactNode }) {
           !open ? "" : "bg-gray-300"
         } flex flex-col gap-12`}
       >
+        <Cursor />
         {/* <Navbar open={open} setOpen={setOpen} /> */}
         <TopHeader />
         {open ? "" : children}

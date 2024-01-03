@@ -7,7 +7,8 @@ export default function ProgramCard({ item }: any) {
   return (
     <div className="py-10">
       <div
-        className="program-card hover:scale-105 hover:transition ease-in hover:duration-500  w-[384px] max-h-[550px] p-6 flex flex-col gap-8 rounded-lg"
+        id="view"
+        className="program-card  hover:scale-105 hover:transition ease-in hover:duration-500  w-[384px] max-h-[550px] p-6 flex flex-col gap-8 rounded-lg"
         style={{ boxShadow: "2px 2px 4px 2px rgba(0, 0, 0, 0.2)" }}
       >
         <div className="program-image relative overflow-hidden rounded-md">

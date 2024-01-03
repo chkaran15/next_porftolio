@@ -11,7 +11,7 @@ function Links({ item }: { item: any }) {
       <Link
         href={item?.url}
         onClick={() => setIsActive(false)}
-        className="nav-link text-3xl font-semibold"
+        className="nav-link text-3xl font-semibold cursor-none"
       >
         {item?.name}
       </Link>

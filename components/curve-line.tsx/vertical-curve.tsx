@@ -6,22 +6,15 @@ import { useRecoilState } from "recoil";
 
 function VerticalCurve() {
   const [isActive, setIsActive] = useRecoilState(menuState);
-
   const pathRef = useRef<SVGPathElement>(null);
-  const [windowHeight, setWindowHeight] = useState<number>(
-    typeof window !== "undefined" ? window.innerHeight : 0
-  );
 
-  const initialPath = `M100 0 L100 ${windowHeight} Q100 ${
-    windowHeight / 2
-  } 100 0`;
-  const targetPath = `M100 0 L100 ${windowHeight} Q-150 ${
-    windowHeight / 2
-  } 100 0`;
+  const [windowWidth, setWindowWidth] = useState<number>(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowHeight(window.innerHeight);
+      setWindowWidth(window.innerWidth);
     };
 
     window.addEventListener("resize", handleResize);
@@ -29,7 +22,10 @@ function VerticalCurve() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [windowWidth]);
+
+  const initialPath = `M0,0 Q${windowWidth / 2},350 ${windowWidth},0`;
+  const targetPath = `M0,0 Q${windowWidth / 2},0 ${windowWidth},0`;
 
   useEffect(() => {
     if (pathRef.current) {
@@ -50,8 +46,8 @@ function VerticalCurve() {
   }, [initialPath, isActive, targetPath]);
 
   return (
-    <svg className="horizontal-curve absolute top-0 left-[-99px] w-[150px] h-screen min-h-[100vh] fill-[rgb(41_41_41)] stroke-none">
-      <path ref={pathRef} d={isActive ? initialPath : targetPath} />
+    <svg className="horizontal-curve absolute bottom-[-200px] w-full h-[200px] z-[120] bg-transparent ">
+      <path ref={pathRef}  />
     </svg>
   );
 }

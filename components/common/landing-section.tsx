@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
+import { LandingHeading } from "./landing-heading";
 
 export const LandingSection = () => {
   const landingRef = useRef<any>(null);
@@ -85,6 +86,8 @@ export const LandingSection = () => {
             />
           </div>
         </div>
+
+        <LandingHeading />
 
         <div
           ref={mountain3Ref}

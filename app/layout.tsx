@@ -10,6 +10,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  
   return (
     <html lang="en">
       <head>
@@ -22,7 +23,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-rem`}>
-        <Provider>{children}</Provider>
+        
+          <Provider>{children}</Provider>
+        
       </body>
     </html>
   );

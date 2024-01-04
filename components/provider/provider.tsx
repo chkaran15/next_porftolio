@@ -15,6 +15,7 @@ function Provider({ children }: { children: React.ReactNode }) {
         } flex flex-col gap-12`}
       >
         <Cursor />
+        
         {/* <Navbar open={open} setOpen={setOpen} /> */}
         <TopHeader />
         {open ? "" : children}

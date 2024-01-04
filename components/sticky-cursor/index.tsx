@@ -60,7 +60,7 @@ export default function Cursor() {
     <div
       ref={cursorRef}
       className={twMerge(
-        "cursor z-[1111] fixed top-0 left-0 w-5 h-5 rounded-full pointer-events-none mix-blend-difference p-2 flex justify-center items-center",
+        "cursor z-[1111] fixed top-0 left-0 w-5 h-5 rounded-full pointer-events-none mix-blend-difference p-2 hidden lg:flex justify-center items-center",
         isActive ? "bg-white" : "bg-voilet"
       )}
     ></div>

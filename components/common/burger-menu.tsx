@@ -34,7 +34,7 @@ function BurgerMenu() {
               " h-[2px]  w-[40%] transistion duration-300 ease-out ",
               isActive ? "absolute -rotate-[45deg] bg-black" : "bg-white",
               !mouseOn && !isActive && "bg-black",
-              !mouseOn && isActive && "bg-black"
+              !mouseOn && isActive && "bg-white"
             )}
           ></div>
           <div
@@ -42,7 +42,7 @@ function BurgerMenu() {
               " h-[2px]  w-[40%] transistion duration-300 ease-out",
               isActive ? "absoulte rotate-45 bg-black" : "bg-white",
               !mouseOn && !isActive && "bg-black",
-              !mouseOn && isActive && "bg-black"
+              !mouseOn && isActive && "bg-white"
             )}
           ></div>
         </div>

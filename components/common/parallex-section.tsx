@@ -19,23 +19,23 @@ export const Parallex = () => {
       scrollTrigger: {
         trigger: containerRef.current,
         start: "top 90%",
-        end: "=+1200",
-        scrub: 0.5,
+        end: "=+1500",
+        scrub: 0.3,
       },
     });
 
     // Animations for upRef
-    tl.to(upRef.current, { y: "-35%", duration: 1 }, 0);
-    tl.to(upRef2.current, { y: "-35%", duration: 1 }, 0);
+    tl.to(upRef.current, { y: "-35%", duration: 2 }, 0);
+    tl.to(upRef2.current, { y: "-35%", duration: 2 }, 0);
     // Animations for  downRef2
     tl.to(
       downRef.current,
-      { y: "0%", duration: 1, startAt: { y: "-50%", duration: 1 } },
+      { y: "0%", duration: 2, startAt: { y: "-50%", duration: 2 } },
       0
     );
     tl.to(
       downRef2.current,
-      { y: "0%", duration: 1, startAt: { y: "-50%" } },
+      { y: "0%", duration: 2, startAt: { y: "-50%", duration: 2 } },
       0
     );
   }, []);

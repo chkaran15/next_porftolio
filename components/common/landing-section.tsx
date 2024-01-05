@@ -56,6 +56,7 @@ export const LandingSection = () => {
             fill
             className="absolute object-cover"
             quality={100}
+            loading="lazy"
           />
         </div>
         <div
@@ -69,6 +70,7 @@ export const LandingSection = () => {
             fill
             className="absolute object-cover"
             quality={100}
+            loading="lazy"
           />
         </div>
         <div
@@ -83,6 +85,7 @@ export const LandingSection = () => {
               fill
               className="absolute object-cover md:object-contain"
               quality={100}
+              loading="lazy"
             />
           </div>
         </div>
@@ -100,6 +103,7 @@ export const LandingSection = () => {
             fill
             className="absolute object-cover z-[4] bg-gradient-to-b from-transparent to-black"
             quality={100}
+            loading="lazy"
           />
           <div className="absolute w-full md:w-[50%] h-[50vh] md:h-[50vh] transform translate-y-[35%] md:translate-y-[50%]  translate-x-[-10%] ">
             <Image
@@ -108,6 +112,7 @@ export const LandingSection = () => {
               fill
               className="absolute bottom-0 object-contain"
               quality={100}
+              loading="lazy"
             />
           </div>
         </div>

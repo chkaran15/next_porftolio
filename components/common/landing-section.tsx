@@ -24,18 +24,18 @@ export const LandingSection = () => {
     });
     tl.to(
       mountain1Ref.current,
-      { y: "0%", duration: 2, startAt: { y: "20%", duration: 2 } },
+      { y: "0%", duration: 1.5, startAt: { y: "20%", duration: 1.5 } },
       0
     );
 
     tl.to(
       mountain2Ref.current,
-      { y: "0%", duration: 2, startAt: { y: "30%", duration: 2 } },
+      { y: "0%", duration: 1.5, startAt: { y: "30%", duration: 1.5 } },
       0
     );
     tl.to(
       mountain3Ref.current,
-      { y: "0%", duration: 2, startAt: { y: "50%", duration: 2 } },
+      { y: "0%", duration: 1.5, startAt: { y: "50%", duration: 1.5 } },
       0
     );
   }, []);
@@ -51,6 +51,7 @@ export const LandingSection = () => {
         <div className="Image-section absolute  w-full h-full">
           {" "}
           <Image
+            priority
             src={`/landing/sky.png`}
             alt={"image"}
             fill
@@ -64,6 +65,7 @@ export const LandingSection = () => {
         >
           {" "}
           <Image
+            priority
             src={`/landing/mountain3.png`}
             alt={"image"}
             fill
@@ -78,6 +80,7 @@ export const LandingSection = () => {
           <div className="relative w-full h-full transform lg:translate-x-[-10%]">
             {" "}
             <Image
+              priority
               src={`/landing/mountain2.png`}
               alt={"image"}
               fill
@@ -95,6 +98,7 @@ export const LandingSection = () => {
         >
           {" "}
           <Image
+            priority
             src={`/landing/mountain1.png`}
             alt={"image"}
             fill
@@ -103,6 +107,7 @@ export const LandingSection = () => {
           />
           <div className="absolute w-full md:w-[50%] h-[50vh] md:h-[50vh] transform translate-y-[35%] md:translate-y-[50%]  translate-x-[-10%] ">
             <Image
+              priority
               src={`/landing/person.png`}
               alt={"image"}
               fill

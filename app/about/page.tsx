@@ -5,7 +5,7 @@ import React from "react";
 export default function About() {
   return (
     <>
-      {/* <TransistionAnimation title={"about"} /> */}
+      <TransistionAnimation title={"about"} />
       <LandingSection />
       <div className="h-[100vh]"></div>
     </>
